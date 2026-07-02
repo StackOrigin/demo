@@ -116,7 +116,7 @@ export default function Admission() {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-gold-400 text-navy-950">
+      <section className="py-24 lg:py-32 bg-white text-navy-950">
         <div className="max-w-[1180px] mx-auto px-5 sm:px-8 lg:px-12">
           <Reveal variant="scale">
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-20">

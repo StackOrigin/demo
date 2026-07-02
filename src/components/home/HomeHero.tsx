@@ -106,13 +106,13 @@ export default function HomeHero() {
 
         <div className="book-headline absolute inset-0 z-10 grid place-items-center pointer-events-none px-5">
           <h1 className="font-heading tracking-[-0.05em] leading-[0.82] text-white text-center">
-            <span className="book-page book-page-left block text-[4.6rem] sm:text-[7rem] lg:text-[10rem] xl:text-[12rem]">
+            <span className="book-page book-page-left block text-[2.7rem] sm:text-[4.1rem] lg:text-[5.7rem] xl:text-[6.8rem]">
               {SCHOOL.heroLines[0]}
             </span>
-            <span className="block italic text-gold-300 text-[4.2rem] sm:text-[6.5rem] lg:text-[9rem] xl:text-[11rem]">
+            <span className="block italic text-gold-300 text-[2.5rem] sm:text-[3.8rem] lg:text-[5.25rem] xl:text-[6.25rem]">
               {SCHOOL.heroLines[1]}
             </span>
-            <span className="book-page book-page-right block text-[4.2rem] sm:text-[6.8rem] lg:text-[9.2rem] xl:text-[11.2rem]">
+            <span className="book-page book-page-right block text-[2.5rem] sm:text-[3.95rem] lg:text-[5.35rem] xl:text-[6.4rem]">
               {SCHOOL.heroLines[2]}
             </span>
           </h1>

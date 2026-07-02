@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { CheckCircle, ArrowRight, Eye, Target, Star, Shield, Heart, Sparkles, Handshake } from 'lucide-react';
+import { CheckCircle, ArrowRight, Eye, Target } from 'lucide-react';
 import { SCHOOL, IMAGES, VALUES, TIMELINE } from '../data/schoolData';
 import { useScrollToTop } from '../hooks/useScrollAnimation';
 import PageHero from '../components/ui/PageHero';
@@ -7,15 +7,6 @@ import SectionTitle from '../components/ui/SectionTitle';
 import Button from '../components/ui/Button';
 import Reveal from '../components/ui/Reveal';
 import { cn } from '../utils/cn';
-
-const valueIcons: Record<string, React.ReactNode> = {
-  star: <Star className="w-5 h-5" />,
-  shield: <Shield className="w-5 h-5" />,
-  lightbulb: <Sparkles className="w-5 h-5" />,
-  heart: <Heart className="w-5 h-5" />,
-  sprout: <Target className="w-5 h-5" />,
-  handshake: <Handshake className="w-5 h-5" />,
-};
 
 export default function About() {
   useScrollToTop();
@@ -107,10 +98,8 @@ export default function About() {
             {VALUES.map((value, i) => (
               <Reveal key={i} variant={i % 2 === 0 ? 'slide-left' : 'slide-right'} delay={i * 80}>
                 <div className="tactile p-6 md:p-8 rounded-2xl bg-white border border-navy-100/50 shadow-sm hover:shadow-lg hover:border-gold-200 transition-all duration-300 group h-full">
-                  <div className="w-11 h-11 rounded-xl bg-gold-50 text-gold-600 flex items-center justify-center mb-4 group-hover:bg-navy-900 group-hover:text-gold-400 transition-colors duration-300">
-                    {valueIcons[value.icon]}
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-navy-900 mb-2">{value.title}</h3>
+                  <div className="w-10 h-px bg-gold-600 mb-6 transition-all duration-300 group-hover:w-16" />
+                  <h3 className="font-heading text-xl font-bold text-navy-900 mb-3">{value.title}</h3>
                   <p className="text-sm text-navy-500 leading-relaxed">{value.description}</p>
                 </div>
               </Reveal>

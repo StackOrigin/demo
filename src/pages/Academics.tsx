@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, FlaskConical, Music, Dumbbell } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useScrollToTop } from '../hooks/useScrollAnimation';
 import PageHero from '../components/ui/PageHero';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -30,17 +30,16 @@ export default function Academics() {
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <Monitor className="w-6 h-6" />, title: "Smart Classrooms", desc: "Projectors, digital boards, and interactive learning tools in every classroom." },
-              { icon: <FlaskConical className="w-6 h-6" />, title: "Science Labs", desc: "Fully equipped physics, chemistry, and biology laboratories." },
-              { icon: <Music className="w-6 h-6" />, title: "Arts & Music Room", desc: "Dedicated spaces for creative expression, music, and visual arts." },
-              { icon: <Dumbbell className="w-6 h-6" />, title: "Sports Grounds", desc: "Football field, basketball court, and indoor game facilities." },
+              { title: "Smart Classrooms", desc: "Projectors, digital boards, and interactive learning tools in every classroom." },
+              { title: "Science Labs", desc: "Fully equipped physics, chemistry, and biology laboratories." },
+              { title: "Arts & Music Room", desc: "Dedicated spaces for creative expression, music, and visual arts." },
+              { title: "Sports Grounds", desc: "Football field, basketball court, and indoor game facilities." },
             ].map((item, i) => (
               <Reveal key={i} variant="scale" delay={i * 80}>
-                <div className="tactile bg-white rounded-2xl p-6 shadow-sm border border-navy-100/50 hover:shadow-lg transition-all duration-300 text-center h-full group">
-                  <div className="w-12 h-12 rounded-xl bg-navy-900 text-gold-400 flex items-center justify-center mx-auto mb-4 group-hover:bg-gold-500 group-hover:text-navy-900 transition-colors duration-300">
-                    {item.icon}
-                  </div>
-                  <h3 className="font-heading text-lg font-bold text-navy-900 mb-2">{item.title}</h3>
+                <div className="tactile bg-white rounded-2xl p-6 shadow-sm border border-navy-100/50 hover:shadow-lg transition-all duration-300 text-left h-full group">
+                  <span className="editorial-kicker text-gold-700 block mb-7">0{i + 1}</span>
+                  <div className="w-10 h-px bg-gold-600 mb-6 transition-all duration-300 group-hover:w-16" />
+                  <h3 className="font-heading text-xl font-bold text-navy-900 mb-3">{item.title}</h3>
                   <p className="text-sm text-navy-500 leading-relaxed">{item.desc}</p>
                 </div>
               </Reveal>
