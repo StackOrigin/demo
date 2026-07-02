@@ -33,7 +33,13 @@ const profile = (
   school: Profile['school'],
   files: string[],
   achievements: Profile['achievements'],
-): Profile => ({ school, files: files.map((file) => `./schools/${id}/${file}`), achievements });
+): Profile => ({
+  school,
+  files: files.map((file) =>
+    import.meta.env.DEV ? `/schools/${id}/${file}` : `./schools/${id}/${file}`,
+  ),
+  achievements,
+});
 
 const profiles: Record<SchoolId, Profile> = {
   everest: profile('everest', {
@@ -149,7 +155,13 @@ const profiles: Record<SchoolId, Profile> = {
   ]),
 };
 
-const requestedId = (import.meta.env.VITE_SCHOOL_ID || 'everest') as SchoolId;
+const pathname = window.location.pathname.toLowerCase();
+const schoolFromPath: SchoolId | undefined =
+  pathname.includes('surachana-english-school') ? 'surachana'
+    : pathname.includes('laligurans-english-secondary-school') ? 'laligurans'
+      : pathname.includes('everest-secondary-boarding-school') ? 'everest'
+        : undefined;
+const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'everest') as SchoolId;
 const active = profiles[requestedId] || profiles.everest;
 export const SCHOOL = active.school;
 
