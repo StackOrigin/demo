@@ -1,4 +1,4 @@
-type SchoolId = 'everest' | 'surachana' | 'laligurans';
+type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent';
 
 type Profile = {
   school: {
@@ -109,7 +109,7 @@ const profiles: Record<SchoolId, Profile> = {
     ],
     seoDescription: 'Surachana English School in Thaiba, Lalitpur — education is the light of our life.',
     heroLines: ['A brighter', 'way to learn', 'begins here.'],
-  }, ['cover.jpg', 'c6c49ee544844205.jpg', '92329f7a780b20b1.jpg', '6cf565d788ed4cb8.jpg', 'b8975511abb8dfc6.jpg', 'dc492696f43d89d6.jpg', 'bf48f2abeed085be.jpg', '8133dbb07452109b.jpg', '0ea0c11eea99340e.jpg', '0a477c6cca0beb50.jpg'],
+  }, ['cover.jpg', 'c6c49ee544844205.jpg', '6cf565d788ed4cb8.jpg', 'b8975511abb8dfc6.jpg', 'dc492696f43d89d6.jpg', 'bf48f2abeed085be.jpg', '8133dbb07452109b.jpg', '0ea0c11eea99340e.jpg', '0a477c6cca0beb50.jpg', 'c6c49ee544844205.jpg'],
   [
     { number: 'Light', label: 'Guiding Belief', icon: 'trophy' },
     { number: 'English', label: 'Learning Environment', icon: 'target' },
@@ -146,12 +146,123 @@ const profiles: Record<SchoolId, Profile> = {
     ],
     seoDescription: 'Laligurans English Secondary School in Badegaun, Lalitpur.',
     heroLines: ['Room to', 'grow boldly', '& belong fully.'],
-  }, ['652fad28e6ae5d28.jpg', '1e96b24398a1ddd9.jpg', '5071f836b8ff5981.jpg', 'aad2c90e4f936620.jpg', '50e512579b3f710c.jpg', '048969cca0f4e6cd.jpg', 'ac9c8015f08d6ce6.jpg', '0beac181e23526be.jpg', 'logo.jpg', '1e96b24398a1ddd9.jpg'],
+  }, ['new5.jpg', 'new3.jpg', 'new6.jpg', 'new2.jpg', 'new4.jpg', 'new1.jpg', '652fad28e6ae5d28.jpg', '1e96b24398a1ddd9.jpg', '5071f836b8ff5981.jpg', 'aad2c90e4f936620.jpg'],
   [
     { number: 'SEE', label: 'Secondary Focus', icon: 'target' },
     { number: 'English', label: 'Learning Environment', icon: 'award' },
     { number: 'Badegaun', label: 'Local Community', icon: 'users' },
     { number: 'Active', label: 'School Life', icon: 'trophy' },
+  ]),
+
+  vidyasagar: profile('vidyasagar', {
+    name: 'Vidya Sagar Boarding School',
+    shortName: 'Vidya Sagar',
+    tagline: 'Knowledge, confidence, and community.',
+    address: 'Pati–3, Godawari, Lalitpur, Nepal',
+    locationLine: 'Pati · Godawari',
+    phone: '01-5560606',
+    email: 'vsbsgodawari@gmail.com',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Pati-3%2C%20Godawari%2C%20Lalitpur&output=embed',
+    social: { facebook: 'https://www.facebook.com/vsbsgodawari/', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#241018', navy900: '#4b1c2a', gold400: '#ee7b75', gold700: '#a7333c', cream50: '#fcf8f3', cream100: '#f3e8e3' },
+    aboutTitle: 'A Godawari school shaped by participation',
+    aboutSubtitle: 'Meet the learners, educators, and everyday traditions of Vidya Sagar Boarding School.',
+    storyTitle: 'Learning with confidence in Pati',
+    story: [
+      'Vidya Sagar Boarding School is an education community based in Pati–3, Godawari.',
+      'Its public school life brings together classroom learning, music, cultural performance, celebrations, and opportunities for students to take part with confidence.',
+      'Families can connect directly with the school, visit its learning environment, and understand the rhythm of a Vidya Sagar school day.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Vidya Sagar Boarding School',
+    leadershipMessage: [
+      'Welcome to Vidya Sagar Boarding School.',
+      'Education becomes meaningful when knowledge is joined by confidence, expression, discipline, and a real sense of belonging.',
+      'We value the partnership between students, educators, and families that helps every child keep moving forward.',
+    ],
+    seoDescription: 'Vidya Sagar Boarding School in Pati–3, Godawari, Lalitpur.',
+    heroLines: ['Learn with', 'confidence', '& take the stage.'],
+  }, ['7dd8f8d19d230ddf.jpg', '32b4bef529acebb4.jpg', 'c763b2536c3b3442.jpg', '7aca3b6575f138bc.jpg', '509c957c625b84b8.jpg', '5373f35df2038d98.jpg', '90e378c7d3ce5104.jpg', '8436698b31339c61.jpg', 'a1459d548d0023f4.jpg', '504be36eff142c12.jpg'],
+  [
+    { number: 'Music', label: 'Creative Learning', icon: 'trophy' },
+    { number: 'Culture', label: 'Shared Expression', icon: 'award' },
+    { number: 'Pati–3', label: 'Local Community', icon: 'users' },
+    { number: 'Together', label: 'School Spirit', icon: 'target' },
+  ]),
+
+  dolphin: profile('dolphin', {
+    name: 'Dolphin English Secondary School',
+    shortName: 'Dolphin',
+    tagline: 'A lively place to learn and belong.',
+    address: 'Godawari, Lalitpur, Nepal',
+    locationLine: 'Godawari · Lalitpur',
+    phone: '01-5174015',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Godawari%2C%20Lalitpur%2C%20Nepal&output=embed',
+    social: { facebook: 'https://www.facebook.com/p/Dolphin-English-Secondary-School-Godawari-100078825498823/', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#071a2c', navy900: '#103d67', gold400: '#f2c84b', gold700: '#a67905', cream50: '#faf8ef', cream100: '#eeeadd' },
+    aboutTitle: 'A close school community in Godawari',
+    aboutSubtitle: 'Discover the everyday learning and shared experiences of Dolphin English Secondary School.',
+    storyTitle: 'A school day with energy and belonging',
+    story: [
+      'Dolphin English Secondary School serves learners and families in Godawari, Lalitpur.',
+      'Its school identity is visible in the moments students share together: assemblies, activities, performances, classroom experiences, and the friendships built along the way.',
+      'The best way to understand Dolphin is to speak with the school and see the community in person.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Dolphin English Secondary School',
+    leadershipMessage: [
+      'Welcome to Dolphin English Secondary School.',
+      'Children grow when they feel part of their school—able to ask questions, contribute, practise, and discover what they can do.',
+      'Our community aims to make learning purposeful while giving students room to develop confidence and responsibility.',
+    ],
+    seoDescription: 'Dolphin English Secondary School in Godawari, Lalitpur.',
+    heroLines: ['Dive into', 'bright ideas', '& grow together.'],
+  }, ['3c04607148ac15a8.jpg', '96f0b888bf66a3ab.jpg', 'eeb8209dddf847f8.jpg', 'e6546c7083a36ebe.jpg', '195f707d0371fb12.jpg', '3f46c6e33edde946.jpg', 'f5a7642ccda3fc41.jpg', 'aaa58c8180b874b6.jpg', '56f5dfecf4c67254.jpg', '81ffe49100eca9f3.jpg'],
+  [
+    { number: 'English', label: 'Learning Environment', icon: 'award' },
+    { number: 'SEE', label: 'Secondary Focus', icon: 'target' },
+    { number: 'Godawari', label: 'Local Community', icon: 'users' },
+    { number: 'Active', label: 'School Life', icon: 'trophy' },
+  ]),
+
+  crescent: profile('crescent', {
+    name: 'Crescent Academy English School',
+    shortName: 'Crescent',
+    tagline: 'Education is the light of life.',
+    address: 'Dharapati, Godawari, Lalitpur, Nepal',
+    locationLine: 'Dharapati · Godawari',
+    phone: '01-5174168',
+    email: 'cres_mail@yahoo.com',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Dharapati%2C%20Godawari%2C%20Nepal&output=embed',
+    social: { facebook: 'https://www.facebook.com/cres97/', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#102018', navy900: '#244b34', gold400: '#e8c83e', gold700: '#8f7410', cream50: '#faf9ed', cream100: '#eeecd9' },
+    aboutTitle: 'Learning rooted in life and place',
+    aboutSubtitle: 'Explore the active school community behind Crescent Academy English School in Dharapati.',
+    storyTitle: 'Education as a light for everyday life',
+    story: [
+      'Crescent Academy English School is based in Dharapati, Godawari.',
+      'Its guiding belief—“Education is the light of life”—comes alive through classroom learning, community activities, and practical experiences that bring children closer to the world around them.',
+      'Students are encouraged to participate, explore, work together, and build the confidence that lasts beyond a school lesson.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Crescent Academy English School',
+    leadershipMessage: [
+      'Welcome to Crescent Academy English School.',
+      'We believe education should illuminate everyday life: helping children understand, contribute, and recognise their own capacity to grow.',
+      'With families and educators working together, school becomes a place of steady progress, curiosity, and belonging.',
+    ],
+    seoDescription: 'Crescent Academy English School in Dharapati, Godawari, Nepal.',
+    heroLines: ['Let learning', 'light the way', 'into the world.'],
+  }, ['83ebf60752c9853b.jpg', '13fd451da75fde97.jpg', 'c48ea682d15528c1.jpg', 'fea27790a5d3c354.jpg', 'b1e6a02615e8d8fd.jpg', '47b712b44ab4f905.jpg', 'd4da197c0cf06c9d.jpg', 'ea3f2f21916a31d5.jpg', 'fff94a8e1a7baeb3.jpg', 'ff26889a67feae0c.jpg'],
+  [
+    { number: 'Light', label: 'Guiding Belief', icon: 'trophy' },
+    { number: 'English', label: 'Learning Environment', icon: 'award' },
+    { number: 'Dharapati', label: 'Local Community', icon: 'users' },
+    { number: 'Practical', label: 'Learning in Life', icon: 'target' },
   ]),
 };
 
@@ -159,8 +270,11 @@ const pathname = window.location.pathname.toLowerCase();
 const schoolFromPath: SchoolId | undefined =
   pathname.includes('surachana-english-school') ? 'surachana'
     : pathname.includes('laligurans-english-secondary-school') ? 'laligurans'
-      : pathname.includes('everest-secondary-boarding-school') ? 'everest'
-        : undefined;
+      : pathname.includes('vidya-sagar-boarding-school') ? 'vidyasagar'
+        : pathname.includes('dolphin-english-secondary-school') ? 'dolphin'
+          : pathname.includes('crescent-academy-english-school') ? 'crescent'
+            : pathname.includes('everest-secondary-boarding-school') ? 'everest'
+              : undefined;
 const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'everest') as SchoolId;
 const active = profiles[requestedId] || profiles.everest;
 export const SCHOOL = active.school;

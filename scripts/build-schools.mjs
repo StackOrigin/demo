@@ -6,6 +6,9 @@ const schools = [
   ['everest', 'everest-secondary-boarding-school'],
   ['surachana', 'surachana-english-school'],
   ['laligurans', 'laligurans-english-secondary-school'],
+  ['vidyasagar', 'vidya-sagar-boarding-school'],
+  ['dolphin', 'dolphin-english-secondary-school'],
+  ['crescent', 'crescent-academy-english-school'],
 ];
 
 const outputRoot = resolve('generated-websites');
