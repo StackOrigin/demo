@@ -1,4 +1,4 @@
-type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent';
+type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent' | 'ridvan' | 'kingdomstar';
 
 type Profile = {
   school: {
@@ -26,6 +26,22 @@ type Profile = {
   };
   files: string[];
   achievements: Array<{ number: string; label: string; icon: string }>;
+};
+
+type ImageMap = Record<string, string>;
+type SiteData = {
+  school?: Profile['school'];
+  images?: ImageMap;
+  achievements?: Profile['achievements'];
+  programs?: typeof PROGRAMS;
+  values?: typeof VALUES;
+  whyChoose?: typeof WHY_CHOOSE;
+  galleryCategories?: string[];
+  galleryItems?: typeof GALLERY_ITEMS;
+  faculty?: typeof FACULTY;
+  admissionSteps?: typeof ADMISSION_STEPS;
+  requiredDocuments?: string[];
+  timeline?: typeof TIMELINE;
 };
 
 const profile = (
@@ -264,6 +280,80 @@ const profiles: Record<SchoolId, Profile> = {
     { number: 'Dharapati', label: 'Local Community', icon: 'users' },
     { number: 'Practical', label: 'Learning in Life', icon: 'target' },
   ]),
+
+  ridvan: profile('ridvan', {
+    name: 'Ridvan Academy Secondary School',
+    shortName: 'Ridvan Academy',
+    tagline: 'Learning with purpose and dedication.',
+    address: 'Godamchaur, Godawari-1, Lalitpur, Nepal',
+    locationLine: 'Godamchaur · Godawari',
+    phone: '9843733667',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Godamchaur%2C%20Godawari%2C%20Lalitpur&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#1a1124', navy900: '#3d1f5c', gold400: '#d4a84b', gold700: '#8e6420', cream50: '#fbf8f1', cream100: '#f2ece0' },
+    aboutTitle: 'A community school in Godamchaur',
+    aboutSubtitle: 'Discover the learning environment at Ridvan Academy Secondary School.',
+    storyTitle: 'Growing together in Godamchaur',
+    story: [
+      'Ridvan Academy Secondary School serves families in Godamchaur, Godawari-1, Lalitpur.',
+      'The school is committed to providing a supportive environment where students can learn, grow, and prepare for their future.',
+      'Families are welcome to visit the campus and learn more about what Ridvan Academy offers.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Ridvan Academy Secondary School',
+    leadershipMessage: [
+      'Welcome to Ridvan Academy Secondary School.',
+      'We believe every child deserves an education that builds knowledge, character, and confidence.',
+      'Our team works together with families to help each learner reach their full potential.',
+    ],
+    seoDescription: 'Ridvan Academy Secondary School in Godamchaur, Godawari-1, Lalitpur.',
+    heroLines: ['Learn with', 'purpose, grow', 'with dedication.'],
+  }, ['687027484_122157173684683075_1221305003730300835_n.jpg', '697166503_122157643754683075_1363727392376878657_n.jpg', '712883945_122158726316683075_9036749228989883056_n.jpg', '713604773_122158803278683075_4459070923525098111_n.jpg', '726689853_122159627768683075_1806944798507941506_n.jpg', '687027484_122157173684683075_1221305003730300835_n.jpg', '697166503_122157643754683075_1363727392376878657_n.jpg', '712883945_122158726316683075_9036749228989883056_n.jpg', '713604773_122158803278683075_4459070923525098111_n.jpg', '726689853_122159627768683075_1806944798507941506_n.jpg'],
+  [
+    { number: 'Secondary', label: 'Education Focus', icon: 'target' },
+    { number: 'Godamchaur', label: 'Local Community', icon: 'users' },
+    { number: 'Dedication', label: 'School Spirit', icon: 'award' },
+    { number: 'Growing', label: 'Shared Purpose', icon: 'trophy' },
+  ]),
+
+  kingdomstar: profile('kingdomstar', {
+    name: 'Kingdom Star English School',
+    shortName: 'Kingdom Star',
+    tagline: 'A place to learn and shine.',
+    address: 'Taukhel, Godawari-3, Lalitpur, Nepal',
+    locationLine: 'Taukhel · Godawari',
+    phone: '01-5560667',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Taukhel%2C%20Godawari%2C%20Lalitpur&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#0e1f2e', navy900: '#1a4262', gold400: '#e5b83e', gold700: '#946f14', cream50: '#faf7ef', cream100: '#f0eadc' },
+    aboutTitle: 'A welcoming school in Taukhel',
+    aboutSubtitle: 'Explore the everyday learning at Kingdom Star English School.',
+    storyTitle: 'Learning and shining in Taukhel',
+    story: [
+      'Kingdom Star English School is based in Taukhel, Godawari-3, Lalitpur.',
+      'The school provides a caring environment where students are encouraged to learn, participate, and discover their strengths.',
+      'Families are invited to connect with the school and see what makes Kingdom Star a special place for learning.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Kingdom Star English School',
+    leadershipMessage: [
+      'Welcome to Kingdom Star English School.',
+      'Our goal is to help every child learn with confidence and develop the skills they need for the future.',
+      'We believe in working closely with families to create the best learning experience possible.',
+    ],
+    seoDescription: 'Kingdom Star English School in Taukhel, Godawari-3, Lalitpur.',
+    heroLines: ['Shine bright', 'with knowledge', '& confidence.'],
+  }, ['493947330_1275458977758003_6984315445782387093_n.jpg', '589394772_1460573512579881_2641039223961051770_n.jpg', '650759594_1552533896717175_1651505255520844498_n.jpg', '698844602_1603488281621736_7999393850356190423_n.jpg', '738796852_1653853003251930_4326991522193057133_n.jpg', '493947330_1275458977758003_6984315445782387093_n.jpg', '589394772_1460573512579881_2641039223961051770_n.jpg', '650759594_1552533896717175_1651505255520844498_n.jpg', '698844602_1603488281621736_7999393850356190423_n.jpg', '738796852_1653853003251930_4326991522193057133_n.jpg'],
+  [
+    { number: 'English', label: 'Learning Environment', icon: 'award' },
+    { number: 'Taukhel', label: 'Local Community', icon: 'users' },
+    { number: 'Confidence', label: 'School Spirit', icon: 'trophy' },
+    { number: 'Shine', label: 'Guiding Motto', icon: 'target' },
+  ]),
 };
 
 const pathname = window.location.pathname.toLowerCase();
@@ -274,9 +364,13 @@ const schoolFromPath: SchoolId | undefined =
         : pathname.includes('dolphin-english-secondary-school') ? 'dolphin'
           : pathname.includes('crescent-academy-english-school') ? 'crescent'
             : pathname.includes('everest-secondary-boarding-school') ? 'everest'
-              : undefined;
-const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'everest') as SchoolId;
+              : pathname.includes('ridvan-academy-secondary-school') ? 'ridvan'
+                : pathname.includes('kingdom-star-english-school') ? 'kingdomstar'
+                  : undefined;
+const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'surachana') as SchoolId;
 const active = profiles[requestedId] || profiles.everest;
+export const ACTIVE_SCHOOL_ID = (profiles[requestedId] ? requestedId : 'everest') as SchoolId;
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:4000';
 export const SCHOOL = active.school;
 
 const f = active.files;
@@ -351,3 +445,86 @@ export const TIMELINE = [
   { year: 'Growth', title: 'A community grows', description: 'New learners, educators, activities, and shared traditions shape the character of the school.' },
   { year: 'Today', title: 'Learning continues', description: `${SCHOOL.name} continues to help young people learn, participate, and move forward with confidence.` },
 ];
+
+export async function loadBackendSchoolData() {
+  if (import.meta.env.VITE_DISABLE_BACKEND === 'true') return;
+
+  try {
+    const response = await fetch(`${API_BASE_URL}/api/schools/${ACTIVE_SCHOOL_ID}/site-data`);
+    if (!response.ok) throw new Error(`Backend returned ${response.status}`);
+
+    const payload = await response.json() as { ok: boolean; data?: SiteData };
+    if (!payload.ok || !payload.data) throw new Error('Backend response was not usable.');
+
+    applySiteData(payload.data);
+  } catch (error) {
+    console.warn('Using bundled school data because backend data could not be loaded.', error);
+  }
+}
+
+export async function submitInquiry(input: {
+  type: string;
+  fullName: string;
+  email: string;
+  phone: string;
+  studentName?: string;
+  guardianName?: string;
+  grade?: string;
+  preferredContact?: string;
+  message: string;
+}) {
+  const response = await fetch(`${API_BASE_URL}/api/schools/${ACTIVE_SCHOOL_ID}/inquiries`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      ...input,
+      source: 'surachana-website',
+    }),
+  });
+
+  const payload = await response.json() as {
+    ok: boolean;
+    error?: { message?: string };
+  };
+
+  if (!response.ok || !payload.ok) {
+    throw new Error(payload.error?.message || 'Could not send message right now.');
+  }
+}
+
+function applySiteData(data: SiteData) {
+  if (data.school) Object.assign(SCHOOL, data.school);
+  if (data.images) Object.assign(IMAGES, normalizeImages(data.images));
+  replaceArray(ACHIEVEMENTS, data.achievements);
+  replaceArray(PROGRAMS, data.programs);
+  replaceArray(VALUES, data.values);
+  replaceArray(WHY_CHOOSE, data.whyChoose);
+  replaceArray(GALLERY_CATEGORIES, data.galleryCategories);
+  replaceArray(GALLERY_ITEMS, data.galleryItems?.map((item) => ({
+    ...item,
+    src: normalizeAssetPath(item.src),
+  })));
+  replaceArray(FACULTY, data.faculty?.map((member) => ({
+    ...member,
+    image: normalizeAssetPath(member.image),
+  })));
+  replaceArray(ADMISSION_STEPS, data.admissionSteps);
+  replaceArray(REQUIRED_DOCUMENTS, data.requiredDocuments);
+  replaceArray(TIMELINE, data.timeline);
+}
+
+function normalizeImages(images: ImageMap) {
+  return Object.fromEntries(
+    Object.entries(images).map(([key, value]) => [key, normalizeAssetPath(value)]),
+  );
+}
+
+function normalizeAssetPath(src: string) {
+  if (!src || import.meta.env.DEV || !src.startsWith('/schools/')) return src;
+  return `.${src}`;
+}
+
+function replaceArray<T>(target: T[], source: T[] | undefined) {
+  if (!source) return;
+  target.splice(0, target.length, ...source);
+}
