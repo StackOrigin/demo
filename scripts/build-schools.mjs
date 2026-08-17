@@ -11,6 +11,10 @@ const schools = [
   ['crescent', 'crescent-academy-english-school'],
   ['ridvan', 'ridvan-academy-secondary-school'],
   ['kingdomstar', 'kingdom-star-english-school'],
+  ['nalanda', 'nalanda-school'],
+  ['oasis', 'oasis-english-school'],
+  ['lotus', 'lotus-english-boarding-school'],
+  ['navasuryodaya', 'nava-suryodaya-english-secondary-school'],
 ];
 
 const outputRoot = resolve('generated-websites');

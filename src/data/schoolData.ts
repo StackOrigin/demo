@@ -1,4 +1,4 @@
-type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent' | 'ridvan' | 'kingdomstar';
+type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent' | 'ridvan' | 'kingdomstar' | 'nalanda' | 'oasis' | 'lotus' | 'navasuryodaya';
 
 type Profile = {
   school: {
@@ -354,6 +354,154 @@ const profiles: Record<SchoolId, Profile> = {
     { number: 'Confidence', label: 'School Spirit', icon: 'trophy' },
     { number: 'Shine', label: 'Guiding Motto', icon: 'target' },
   ]),
+
+  nalanda: profile('nalanda', {
+    name: 'Nalanda School',
+    shortName: 'Nalanda',
+    tagline: 'Knowledge that endures, learning that inspires.',
+    address: 'Naladhuli, Godawari, Lalitpur, Nepal',
+    locationLine: 'Naladhuli · Godawari',
+    phone: '',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Naladhuli%2C%20Godawari%2C%20Lalitpur&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#1c1a2a', navy900: '#3a2e5c', gold400: '#f2c94c', gold700: '#d4a32d', cream50: '#fefcf7', cream100: '#fdf8ee' },
+    aboutTitle: 'A school rooted in enduring learning',
+    aboutSubtitle: 'Discover the community and daily learning behind Nalanda School in Godawari.',
+    storyTitle: 'Growing minds that last',
+    story: [
+      'Nalanda School is based in Naladhuli, Godawari, serving the local community.',
+      'The school balances focused classroom learning with activities that help students ask questions, explore ideas, and grow in confidence.',
+      'Families are welcomed to speak with the school, visit the campus, and discover what makes Nalanda a place where learning endures.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Nalanda School',
+    leadershipMessage: [
+      'Welcome to Nalanda School.',
+      'We believe lasting learning comes from curiosity, care, and the steady encouragement that turns effort into understanding.',
+      'Together with families, we aim to help every child grow in knowledge, responsibility, and confidence as they move forward.',
+    ],
+    seoDescription: 'Nalanda School in Naladhuli, Godawari, Lalitpur.',
+    heroLines: ['Enduring', 'knowledge, growing', 'hearts.'],
+  }, ['472159540_565225916318667_2927857846396177114_n.jpg', '476448422_589306393910619_5164753655654202890_n.jpg', '481057279_600879832753275_5788422503354684594_n.jpg', '481270555_608507445323847_2583242090352871_n.jpg', '481661156_600878099420115_5396581046676008189_n.jpg', '481909380_609077841933474_5282025097859167508_n.jpg', '481975412_609077711933488_5781603398071165117_n.jpg', '482347443_612107328297192_4885132035042062451_n.jpg', '472159540_565225916318667_2927857846396177114_n.jpg', '476448422_589306393910619_5164753655654202890_n.jpg'],
+  [
+    { number: 'Knowledge', label: 'Guiding Value', icon: 'target' },
+    { number: 'Naladhuli', label: 'Local Community', icon: 'users' },
+    { number: 'Growing', label: 'Learning Spirit', icon: 'award' },
+    { number: 'Confidence', label: 'Shared Goal', icon: 'trophy' },
+  ]),
+
+  oasis: profile('oasis', {
+    name: 'Oasis English School',
+    shortName: 'Oasis',
+    tagline: 'A haven of learning in the heart of the community.',
+    address: 'Buddha Sthan, Lalitpur, Nepal',
+    locationLine: 'Buddha Sthan · Lalitpur',
+    phone: '',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Buddha+Sthan%2C%20Lalitpur&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#12263a', navy900: '#1f4067', gold400: '#f5e615', gold700: '#d4b41a', cream50: '#fff9e6', cream100: '#fff3c4' },
+    aboutTitle: 'A welcoming haven for learning',
+    aboutSubtitle: 'Meet the people and everyday moments that make Oasis English School special.',
+    storyTitle: 'Learning in a place of calm',
+    story: [
+      'Oasis English School serves families in Buddha Sthan, Lalitpur, with a community-minded approach to education.',
+      'The school day blends classroom focus with activities, celebrations, and friendships that bring learning to life.',
+      'Visitors are invited to connect with the school, see the learning environment, and feel the calm energy of a true oasis.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Oasis English School',
+    leadershipMessage: [
+      'Welcome to Oasis English School.',
+      'We see every school day as an opportunity for children to discover, grow, and belong.',
+      'With care and clear expectations, we help learners build the knowledge and confidence they need for tomorrow.',
+    ],
+    seoDescription: 'Oasis English School in Buddha Sthan, Lalitpur.',
+    heroLines: ['Find your', 'oasis of', 'learning here.'],
+  }, ['292583687_698148351574192_530635307896905370_n.jpg', '473078287_1327451925310495_4918177557758582470_n (1).jpg', '736997293_1783727919682891_7123001969893089022_n.jpg', '749878404_1798939844828365_5022674127199531010_n.jpg', '749981936_1797807784941571_8112576280462610436_n.jpg', '774350197_1822163045839378_604549100128271481_n.jpg', '774352404_1822163112506038_1909260174378120454_n.jpg', '774666138_1822163335839349_8672254680375476276_n.jpg', '292583687_698148351574192_530635307896905370_n.jpg', '473078287_1327451925310495_4918177557758582470_n (1).jpg'],
+  [
+    { number: 'English', label: 'Learning Environment', icon: 'award' },
+    { number: 'Buddha Sthan', label: 'Local Community', icon: 'users' },
+    { number: 'Learning', label: 'Guiding Light', icon: 'target' },
+    { number: 'Growth', label: 'Every Day', icon: 'trophy' },
+  ]),
+
+  lotus: profile('lotus', {
+    name: 'Lotus English Boarding School',
+    shortName: 'Lotus',
+    tagline: 'Bloom where you are planted.',
+    address: 'Hetauda, Makawanpur, Nepal',
+    locationLine: 'Hetauda · Makawanpur',
+    phone: '',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Hetauda%2C%20Makawanpur&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#1e2a1e', navy900: '#2d522d', gold400: '#e8b84a', gold700: '#b8860b', cream50: '#faf8f5', cream100: '#f0eae3' },
+    aboutTitle: 'A school where every child can bloom',
+    aboutSubtitle: 'Explore the supportive environment at Lotus English Boarding School.',
+    storyTitle: 'Growing strong and confident',
+    story: [
+      'Lotus English Boarding School serves families in Hetauda, Makawanpur.',
+      'The school encourages students to bloom in their own time through classroom learning, creative activities, and shared experiences.',
+      'Families are invited to visit the campus, meet the community, and discover what makes Lotus a place where every child can flourish.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Lotus English Boarding School',
+    leadershipMessage: [
+      'Welcome to Lotus English Boarding School.',
+      'We believe every child has unique strengths waiting to grow, like a lotus blooming in its own season.',
+      'Our community works together with families to help each learner become confident, capable, and ready for the future.',
+    ],
+    seoDescription: 'Lotus English Boarding School in Hetauda, Makawanpur.',
+    heroLines: ['Bloom with', 'confidence, grow', 'in your own light.'],
+  }, ['342528184_921076195862052_4990190305630067243_n.jpg', '597630450_1472274111564679_5502597536966346503_n.jpg', '620050384_1505666048225485_441556447174774866_n.jpg', '631829220_1525746936217396_889966623312844053_n.jpg', '636022232_1528868335905256_1662579907589600252_n.jpg', '636658966_1528854525906637_255430879895189525_n.jpg', '644863402_1541307051328051_8479702903146404446_n.jpg', '772853923_1693604049431683_2549543651936556701_n.jpg', '774668283_1695382942587127_9015467016629918755_n.jpg', '342528184_921076195862052_4990190305630067243_n.jpg'],
+  [
+    { number: 'Lotus', label: 'Guiding Spirit', icon: 'award' },
+    { number: 'Hetauda', label: 'Local Community', icon: 'users' },
+    { number: 'Boarding', label: 'Full Care', icon: 'target' },
+    { number: 'Bloom', label: 'Growth Mindset', icon: 'trophy' },
+  ]),
+
+  navasuryodaya: profile('navasuryodaya', {
+    name: 'Nava Suryodaya English Secondary School',
+    shortName: 'Nava Suryodaya',
+    tagline: 'A new dawn in learning.',
+    address: 'Bharatpur, Chitwan, Nepal',
+    locationLine: 'Bharatpur · Chitwan',
+    phone: '',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Bharatpur%2C%20Chitwan&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#1a1a2e', navy900: '#16213e', gold400: '#ffc300', gold700: '#d4af37', cream50: '#f8f9fa', cream100: '#e9ecef' },
+    aboutTitle: 'A new dawn for learning in Bharatpur',
+    aboutSubtitle: 'Discover the learning community at Nava Suryodaya English Secondary School.',
+    storyTitle: 'Learning rises like the sun',
+    story: [
+      'Nava Suryodaya English Secondary School serves families in Bharatpur, Chitwan.',
+      'The school is committed to creating a supportive environment where students can learn, grow, and prepare for their future.',
+      'With every new day comes fresh opportunity, and our community works together to help each child move forward with confidence.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'Nava Suryodaya English Secondary School',
+    leadershipMessage: [
+      'Welcome to Nava Suryodaya English Secondary School.',
+      'Just as each day brings a new sun, we believe each learner brings new light to our school.',
+      'Our team works closely with families to make sure every child grows in knowledge, character, and confidence as they step into their future.',
+    ],
+    seoDescription: 'Nava Suryodaya English Secondary School in Bharatpur, Chitwan.',
+    heroLines: ['New dawn,', 'bright learning,', 'rising together.'],
+  }, ['307365518_480145550808483_2889415346133960357_n.jpg', '481467971_1074768591346173_3907868238487449320_n.jpg', '490511895_1106922448130787_758832063229362090_n.jpg', '499948973_1138051025017929_6686416995949109148_n.jpg', '604537782_1322340359922327_4640231885275306897_n.jpg', '700871178_1437895508366811_2002569397431421239_n.jpg', '702813093_1443738314449197_3637104322721571824_n.jpg', '752508075_1500062715483423_7670700262099901706_n.jpg', '753337067_1500062408816787_1104180387923487735_n.jpg', '307365518_480145550808483_2889415346133960357_n.jpg'],
+  [
+    { number: 'Dawn', label: 'Each Day', icon: 'target' },
+    { number: 'Bharatpur', label: 'Local Community', icon: 'users' },
+    { number: 'Growth', label: 'Daily Goal', icon: 'trophy' },
+    { number: 'Light', label: 'Knowledge', icon: 'award' },
+  ]),
 };
 
 const pathname = window.location.pathname.toLowerCase();
@@ -366,7 +514,11 @@ const schoolFromPath: SchoolId | undefined =
             : pathname.includes('everest-secondary-boarding-school') ? 'everest'
               : pathname.includes('ridvan-academy-secondary-school') ? 'ridvan'
                 : pathname.includes('kingdom-star-english-school') ? 'kingdomstar'
-                  : undefined;
+                  : pathname.includes('nalanda-school') ? 'nalanda'
+                    : pathname.includes('oasis-english-school') ? 'oasis'
+                      : pathname.includes('lotus-english-boarding-school') ? 'lotus'
+                        : pathname.includes('nava-suryodaya-english-secondary-school') ? 'navasuryodaya'
+                          : undefined;
 const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'surachana') as SchoolId;
 const active = profiles[requestedId] || profiles.everest;
 export const ACTIVE_SCHOOL_ID = (profiles[requestedId] ? requestedId : 'everest') as SchoolId;
