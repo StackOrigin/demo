@@ -1,4 +1,4 @@
-type SchoolId = 'everest' | 'surachana' | 'laligurans' | 'vidyasagar' | 'dolphin' | 'crescent' | 'ridvan' | 'kingdomstar' | 'nalanda' | 'oasis' | 'lotus' | 'navasuryodaya';
+type SchoolId = 'everest' | 'laligurans' | 'vidyasagar'| 'ridvan' | 'kingdomstar' | 'nalanda' | 'oasis' | 'navasuryodaya' | 'william';
 
 type Profile = {
   school: {
@@ -502,6 +502,43 @@ const profiles: Record<SchoolId, Profile> = {
     { number: 'Growth', label: 'Daily Goal', icon: 'trophy' },
     { number: 'Light', label: 'Knowledge', icon: 'award' },
   ]),
+
+  william: profile('william', {
+    name: 'William Public School',
+    shortName: 'William',
+    tagline: 'Learning with care, growing with confidence.',
+    address: 'Lalitpur, Nepal',
+    locationLine: 'Lalitpur',
+    phone: '',
+    email: '',
+    hours: 'Sunday – Friday · School hours',
+    mapUrl: 'https://www.google.com/maps?q=Lalitpur%2C%20Nepal&output=embed',
+    social: { facebook: '', instagram: '', youtube: '', twitter: '' },
+    theme: { navy950: '#0f1f3d', navy900: '#1e3a6e', gold400: '#e8b84a', gold700: '#a67c1e', cream50: '#faf9f5', cream100: '#f0ece2' },
+    aboutTitle: 'A caring community school in Lalitpur',
+    aboutSubtitle: 'Discover the everyday learning and shared experiences at William Public School.',
+    storyTitle: 'Growing together with care and confidence',
+    story: [
+      'William Public School serves learners and families in Lalitpur with a warm, community-minded approach to education.',
+      'The school day balances focused classroom learning with activities, celebrations, and friendships that bring learning to life.',
+      'Families are invited to connect with the school, visit the campus, and discover what makes William Public School a special place for learning.',
+    ],
+    leadershipName: 'School Leadership',
+    leadershipTitle: 'William Public School',
+    leadershipMessage: [
+      'Welcome to William Public School.',
+      'We believe children learn best when they feel cared for, encouraged, and part of a community that believes in them.',
+      'Together with families, we aim to help every learner grow in knowledge, character, and confidence as they move forward.',
+    ],
+    seoDescription: 'William Public School in Lalitpur, Nepal.',
+    heroLines: ['Learn with', 'care, grow', 'with confidence.'],
+  }, ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png', 'image7.png', 'image8.png', 'image9.png', 'image10.png'],
+  [
+    { number: 'Care', label: 'Guiding Value', icon: 'heart' },
+    { number: 'Lalitpur', label: 'Local Community', icon: 'users' },
+    { number: 'Confidence', label: 'School Spirit', icon: 'trophy' },
+    { number: 'Together', label: 'Shared Purpose', icon: 'target' },
+  ]),
 };
 
 const pathname = window.location.pathname.toLowerCase();
@@ -517,7 +554,8 @@ const schoolFromPath: SchoolId | undefined =
                   : pathname.includes('nalanda-school') ? 'nalanda'
                     : pathname.includes('oasis-english-school') ? 'oasis'
                       : pathname.includes('lotus-english-boarding-school') ? 'lotus'
-                        : pathname.includes('nava-suryodaya-english-secondary-school') ? 'navasuryodaya'
+                      : pathname.includes('nava-suryodaya-english-secondary-school') ? 'navasuryodaya'
+                        : pathname.includes('william-public-school') ? 'william'
                           : undefined;
 const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'surachana') as SchoolId;
 const active = profiles[requestedId] || profiles.everest;

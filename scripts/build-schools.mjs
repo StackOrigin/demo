@@ -15,6 +15,7 @@ const schools = [
   ['oasis', 'oasis-english-school'],
   ['lotus', 'lotus-english-boarding-school'],
   ['navasuryodaya', 'nava-suryodaya-english-secondary-school'],
+  ['william', 'william-public-school'],
 ];
 
 const outputRoot = resolve('generated-websites');
