@@ -557,9 +557,9 @@ const schoolFromPath: SchoolId | undefined =
                       : pathname.includes('nava-suryodaya-english-secondary-school') ? 'navasuryodaya'
                         : pathname.includes('william-public-school') ? 'william'
                           : undefined;
-const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'surachana') as SchoolId;
-const active = profiles[requestedId] || profiles.everest;
-export const ACTIVE_SCHOOL_ID = (profiles[requestedId] ? requestedId : 'everest') as SchoolId;
+const requestedId = (import.meta.env.VITE_SCHOOL_ID || schoolFromPath || 'oasis') as SchoolId;
+const active = profiles[requestedId] || profiles.oasis || profiles.everest;
+export const ACTIVE_SCHOOL_ID = (profiles[requestedId] ? requestedId : 'oasis') as SchoolId;
 export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:4000';
 export const SCHOOL = active.school;
 
